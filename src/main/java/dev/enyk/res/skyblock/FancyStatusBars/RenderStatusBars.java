@@ -54,11 +54,11 @@ public class RenderStatusBars {
         
         // Render health text
         OrderedText healthText = Text.of(health + "/" + maxHealth).asOrderedText();
-        mc.textRenderer.drawWithOutline(healthText, barXCoord + ((75 - mc.textRenderer.getWidth(healthText)) / 2), barYCoord - 5, 0xffff5659, 0xff000000, matrixStack.peek().getPositionMatrix(), vertexConsumer, 1);
+        mc.textRenderer.drawWithOutline(healthText, barXCoord + ((75 - mc.textRenderer.getWidth(healthText)) / 2), barYCoord - 5, 0xffff5659, 0xff000000, matrixStack.peek().getPositionMatrix(), vertexConsumer, 255);
         vertexConsumer.draw();
         // Render mana text
         OrderedText manaText = Text.of(mana + "/" + maxMana).asOrderedText();
-        mc.textRenderer.drawWithOutline(manaText, barXCoord + 106 + ((75 - mc.textRenderer.getWidth(manaText)) / 2), barYCoord - 5, 0xff00fcfb, 0xff000000, matrixStack.peek().getPositionMatrix(), vertexConsumer, 10);
+        mc.textRenderer.drawWithOutline(manaText, barXCoord + 106 + ((75 - mc.textRenderer.getWidth(manaText)) / 2), barYCoord - 5, 0xff00fcfb, 0xff000000, matrixStack.peek().getPositionMatrix(), vertexConsumer, 255);
 
         // Draw text
         vertexConsumer.draw();
