@@ -1,12 +1,6 @@
 package dev.enyk.res;
 
 import net.fabricmc.api.ModInitializer;
-import net.minecraft.client.util.math.MatrixStack;
-import net.minecraft.text.Text;
-
-import java.util.ArrayList;
-import dev.enyk.res.skyblock.FancyStatusBars.ParseActionBar;
-import dev.enyk.res.skyblock.FancyStatusBars.RenderStatusBars;
 
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -24,7 +18,6 @@ public class RoughlyEnoughSkyblock implements ModInitializer {
 		// This code runs as soon as Minecraft is in a mod-load-ready state.
 		// However, some things (like resources) may still be uninitialized.
 		// Proceed with mild caution.
-		LOGGER.info("Loaded Roughly Enough Skyblock");
-
+		LOGGER.info("Initializing Roughly Enough Skyblock");
 	}
 }

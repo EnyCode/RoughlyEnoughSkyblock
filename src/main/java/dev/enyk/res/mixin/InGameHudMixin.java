@@ -1,6 +1,5 @@
 package dev.enyk.res.mixin;
 
-import dev.enyk.res.RoughlyEnoughSkyblock;
 import dev.enyk.res.skyblock.FancyStatusBars.RenderStatusBars;
 import net.minecraft.client.gui.hud.InGameHud;
 import net.minecraft.client.util.math.MatrixStack;
@@ -14,8 +13,6 @@ import org.spongepowered.asm.mixin.injection.ModifyArg;
 import org.spongepowered.asm.mixin.injection.ModifyArgs;
 import org.spongepowered.asm.mixin.injection.callback.CallbackInfo;
 import org.spongepowered.asm.mixin.injection.invoke.arg.Args;
-
-import dev.enyk.res.RoughlyEnoughSkyblock;
 
 @Mixin(InGameHud.class)
 public class InGameHudMixin {
@@ -42,6 +39,7 @@ public class InGameHudMixin {
         statusBars.renderAll(matrices);
     }
 
+    // Update and cancel the action bar
     @Inject(method = "setOverlayMessage(Lnet/minecraft/text/Text;Z)V", at = @At("HEAD"), cancellable = true)
     private void onSetOverlayMessage(Text message, boolean tinted, CallbackInfo ci) {
         statusBars.update(message.getString());
