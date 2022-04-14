@@ -6,14 +6,15 @@
   "name": "Roughly Enough Skyblock",
   "description": "Just another skyblock mod. ",
   "authors": [
-    "Eny"
+    "Eny",
+    "Skyblocker - For help on the HUD",
+    "ButterSB - For help on the HUD"
   ],
   "contact": {
-    "homepage": "https://fabricmc.net/",
-    "sources": "https://github.com/FabricMC/fabric-example-mod"
+    "sources": "https://github.com/EnyCode/RoughlyEnoughSkyblock"
   },
 
-  "license": "MIT",
+  "license": "LGPL-3",
   "icon": "assets/roughlyenoughskyblock/icon.png",
 
   "environment": "client",
@@ -23,7 +24,7 @@
     ]
   },
   "mixins": [
-    "modid.mixins.json"
+    "res.mixins.json"
   ],
 
   "depends": {
