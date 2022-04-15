@@ -21,6 +21,9 @@
   "entrypoints": {
     "main": [
       "dev.enyk.res.RoughlyEnoughSkyblock"
+    ],
+    "rei": [
+      "dev.enyk.res.plugins.REIPlugin"
     ]
   },
   "mixins": [
@@ -34,6 +37,7 @@
     "java": ">=17"
   },
   "suggests": {
-    "modmenu": ">=3.0.1"
+    "modmenu": ">=3.0.1",
+    "roughlyenoughitems": ">=7.0.346"
   }
 }
