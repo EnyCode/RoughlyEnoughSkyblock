@@ -1,0 +1,4 @@
+[submodule "src/main/resources/data/roughlyenoughskyblock/skyblockdata"]
+	path = src/main/resources/data/roughlyenoughskyblock/skyblockdata
+	url = https://github.com/EnyCode/SkyblockData.git
+	branch = main
