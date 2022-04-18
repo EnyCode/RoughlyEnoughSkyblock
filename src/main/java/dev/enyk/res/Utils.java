@@ -17,11 +17,12 @@ public class Utils {
     public static boolean isInjected = false;
 
     public static boolean inSkyblock() {
-        MinecraftClient mc = MinecraftClient.getInstance();
-        if (mc.player.getScoreboard() != null) {
+        try {
             if (getSidebar().get(0).contains("SKYBLOCK")) {
                 return true;
             }
+        } catch (Exception error)  {
+
         }
         return false;
     }

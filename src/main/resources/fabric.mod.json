@@ -22,6 +22,9 @@
     "main": [
       "dev.enyk.res.RoughlyEnoughSkyblock"
     ],
+    "client": [
+      "dev.enyk.res.RoughlyEnoughSkyblockClient"
+    ],
     "rei": [
       "dev.enyk.res.plugins.REIPlugin"
     ]

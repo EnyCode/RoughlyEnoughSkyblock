@@ -1,5 +1,6 @@
 package dev.enyk.res.mixin;
 
+import dev.enyk.res.Utils;
 import dev.enyk.res.skyblock.FancyStatusBars.RenderStatusBars;
 import net.minecraft.client.gui.hud.InGameHud;
 import net.minecraft.client.util.math.MatrixStack;
@@ -43,6 +44,8 @@ public class InGameHudMixin {
     @Inject(method = "setOverlayMessage(Lnet/minecraft/text/Text;Z)V", at = @At("HEAD"), cancellable = true)
     private void onSetOverlayMessage(Text message, boolean tinted, CallbackInfo ci) {
         statusBars.update(message.getString());
-        ci.cancel();
+        if (Utils.inSkyblock()) {
+            ci.cancel();
+        }
     }
 }
