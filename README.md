@@ -1,6 +1,9 @@
 <p align="center"><img src="https://cdn.modrinth.com/data/I6wayhhr/icon.png" alt="Logo" width="200"></p>
 <h1 align="center">Roughly Enough Skyblock<br></h1>
 
+### Warning - This project is on pause!
+I've switched to developing a different mod, Never Enough Wikis, so stay tuned for it!
+
 Welcome to Roughly Enough Skyblock (RES), a new Hypixel Skyblock mod for Fabric 1.18.1. 
 
 RES has some basic features, but has a lot more coming! Check out our progress over at [projects](https://github.com/EnyCode/RoughlyEnoughSkyblock/projects/1). 
